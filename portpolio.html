@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>Ganesh Narale Portfolio</title>
+	<style>
+		.skills-bar {
+  padding: 25px 30px;
+  background-color: #07374a;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #f0f0e6;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #25b79f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 50%;
+}
+.progress-line .javascript {
+  width: 50%;
+}
+.progress-line .c {
+  width: 50%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "50%";
+}
+.progress-line .javascript::after {
+  content: "50%";
+}
+.progress-line .c::after {
+  content: "50%";
+}
+
+.navbar.solid {
+  background-color: #07374a;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+  z-index: 500;
+}
+
+.navbar.solid .navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+
+.navbar-brand {
+  display: none;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+
+.work-arrow {
+  margin: 2rem 0;
+}
+
+.work-arrow a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #25b79f;
+}
+
+.work-arrow-2 {
+  margin: 2rem 0;
+}
+
+.work-arrow-2 a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #25b79f;
+  display: none;
+}
+	</style>
+         
+          
+
+</head>
+
+<body>
+	<!--Header(start)-->
+	<table id="header" border="0"
+		width="100%" cellpadding="0"
+		cellspacing="0" bgcolor="#4CAF50">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%"
+					align="center">
+					<tr>
+						<td>
+							
+
+						</td>
+
+						<td>
+							<font face="Comic sans MS" size="6">
+								<b> My Portfolio </b>
+							</font>
+						</td>
+
+						<td width="15%">
+							
+						</td>
+
+						<td>
+							<a href="#home"
+							style="text-decoration:none">
+								<font face="Verdana"
+									size="5" color=black>
+									Home
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#about"
+							style="text-decoration:none">
+								<font face="Verdana"
+									size="5" color=black>
+									About
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#projects"
+							style="text-decoration:none">
+								<font face="Verdana"
+									size="5" color=black>
+									projects
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#achievements"
+							style="text-decoration:none">
+								<font face="Verdana"
+									size="5" color=black>
+									Achievements
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+						
+						
+										  
+						
+
+						<td>
+							<a href="#contact"
+							style="text-decoration:none">
+								<font face="Verdana"
+									size="5" color=black>
+									Contact
+								</font>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Header(end)-->
+
+	<!--Home(start)-->
+	<table id="home" border="1" width="100%"
+		cellpadding="20" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td align="center" valign="middle">
+							<h3>
+								<!-- <font face="Times New Roman" -->
+                                   <font face="Comic sans MS"
+									size="6" color="#ffffff">
+									Welcome to my Portfolio
+								</font>
+							</h3>
+
+							<h2>
+								<font face="Verdana" size="6"
+									color="#4CAF50">
+									<!-- Freelance Programmer -->
+								</font>
+							</h2>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Home(end)-->
+
+
+	<!--About(start)-->
+	<table id="about" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="#4CAF50">
+								About Me
+							</font>
+							<hr color="#4CAF50" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td width="30%">
+                             
+							<img src="ganesh.jpg" style=" border-radius:50%;height: 400px; width: 400px;">   
+
+                            <!-- ganesh images -->
+                            
+						</td>
+
+						<td width="60%">
+							<font face="Verdana" size="4"
+								color="white">
+								Thanks for your interest, here 
+								is a quick story of me and this 
+								website.
+								<hr color="black">
+								 i am Ganesh Narale 
+								 i am student of BCA in
+								 New Satara College of BCA korti, Pandharpur
+								 I am passionate about web devlopement.
+								<hr color="black">
+								I am 21 year old, BCA student studied at New Satara College of BCA studies. I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new things; the more, the better.
+
+								 
+								<hr color="blac
+								k">
+
+								 
+
+
+								<hr color="black">
+								Cheers,
+								<br>
+								<b>Ganesh Narale</b>
+							</font>
+                          <td width="10%">
+							<font face="arial" color="black" size="5">
+								<a href="#header" style="text-decoration:none">
+									<font face="Verdana" color="#4CAF50" size="6">
+										   <b>TOP</b>
+									</font>
+								</a>
+							</font>	
+						</td>
+					</tr>
+				</table>
+				<hr color="black">
+				<hr color="black">
+				<hr color="black">
+			</td>
+		</tr>
+	</table>
+	<!--About(end)-->
+
+
+	<!--Projects(start)-->
+	<table id="projects" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+		<tr>
+			<button style="position: absolute; right: 3%; "><a href="#header "style="text-decoration: none;" >
+				<font face="arial" color="black" size="5">
+				<b> <span style='font-size:100px;'>&#8593;</span> </b>
+			 
+		</a>
+	</font>
+</button>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="black">
+							My Projects
+							</font>
+							<hr color="black" width="90">
+						</td>
+					</tr>
+					
+
+					<tr>
+						<td height="10">
+							<font face="Times New Roman"
+								size="5" color="black">
+								<ul>
+									<li>
+										BMI Calculator
+										<a href="#" style="text-decoration:none">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Calculator
+										<a href="#"  
+										    style="text-decoration:none"
+											color="#c2c0c3">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Calendar
+										<a href="#"
+										style="text-decoration:none">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										ChatBot
+										<a href="#"
+										style="text-decoration:none">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Login Page
+										<a href="#"
+										style="text-decoration:none">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Forms
+										<a href="#"
+										style="text-decoration:none">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Record Room
+										<a href="#"
+										style="text-decoration:none">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Snake Game
+										<a href="#"
+										style="text-decoration:none">
+											 ➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										OTP generater
+										<a href="#"
+										style="text-decoration:none">
+											➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Birds Fly Game
+										<a href="#"
+										style="text-decoration:none">
+											➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Music Generate
+										<a href="#"
+										style="text-decoration:none">
+											➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Pineo
+										<a href="#"
+										style="text-decoration:none">
+											➲
+										</a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Hostel Management System
+										<a href="#"
+										style="text-decoration:none">
+											➲ </a>
+									</li>
+
+									<li>
+										<hr color="#c2c0c3">
+										Travel Management System
+										<a href="#" style=
+											"text-decoration:none"> ➲
+										</a>
+									</li>
+								</ul>
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+								<hr color="#c2c0c3">
+							</font>
+							<!-- <td width="10%">
+								<font face="arial" color="black" size="5">
+									<a href="#header" style="text-decoration:none">
+										<font face="Verdana" color="#4CAF50" size="6">
+											 
+											   <b>TOP</b>
+										</font>
+									</a>
+								</font>	
+							</td> -->
+							
+						</td>
+
+						<td width="45%">
+							<img src="imgp.png"
+								alt="Project" width="100%" height="100%">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+	<div class="skills">
+		<div class="right-content">
+	                      <div>
+			             <h1 class="skills-heading">My Skills</h1>
+		                  </div>
+		  <div class="skills-bar">
+			<div class="bar">
+			             <div class="info">
+			            	<span>HTML</span>
+			              </div>
+			           <div class="progress-line"><span class="html"></span></div>
+			  <div class="bar">
+				         <div class="info">
+				          <span>CSS</span>
+				          </div>
+				         <div class="progress-line"><span class="css"></span></div>
+				<div class="bar">
+				          <div class="info">
+				        	<span>java</span>
+				          </div>
+				          <div class="progress-line"><span class="bootstrap"></span></div>
+				  <div class="bar">
+					          <div class="info">
+					           <span>JAVASCRIPT</span>
+					          </div>
+					         <div class="progress-line"><span class="javascript"></span></div>
+					<div class="bar">
+					          <div class="info">
+						         <span>C Programming</span>
+					            </div>
+					            <div class="progress-line"><span class="c"></span></div>
+								<button style="position: absolute; right: 3%; "><a href="#header "style="text-decoration: none;" >
+									<font face="arial" color="black" size="5">
+									<b> <span style='font-size:100px;'>&#8593;</span> </b>
+								 
+							</a>
+						</font>
+					</button>
+	</div>
+          </div>
+                </div>
+                       </div>
+                             </div>
+                                    </div>
+                                        </div>
+                                              </div>
+	<!--Projects(end)-->
+
+	<!--Achievement(start)-->
+	<table id="achievements" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle">
+							<font face="Verdana" size="7" color="#4CAF50">
+								Achievements
+								<hr color="#4CAF50" width="100">
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<font face="Verdana" size="4" color="white">
+								<ul>
+									<li>
+										<b>BCA FY PASSOUT</b>
+										<ul>
+											<li>
+												2022-23 At New Satara College of BCA korti,Pandharpur
+											</li>
+											<li>
+												Pass out width
+												69% 
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<hr color="black">
+										<hr color="black">
+										<hr color="black">
+										<b>NSS Student</b>
+										<ul>
+											<li>
+												2023-24
+											</li>
+											<li>
+												In Solapur University. 
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<hr color="black">
+										<hr color="black">
+										<hr color="black">
+										<b>BCA Sy</b>
+										<ul>
+											<li>
+												2023-24
+											</li>
+											<li>
+												Present study in New Satara College of BCA korti,Pandharpur
+											</li>
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+											<hr color="black">
+										</ul>
+									</li>
+
+								</ul>
+
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Achievement(end)-->
+
+
+	<!--Contact(start)-->
+	<table id="contact" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="7"
+								color="black">
+								Contact
+							</font>
+							<hr color="black" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" width="50%" cellpadding="15"
+								cellspacing="0" align="center" bgcolor="black">
+								<tr>
+									<td width="30%">
+										<hr color="black">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											Name
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input type="text" size="40" required>
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											Email
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input type="email" size="40">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											Number
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<input type="number" size="12">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											Message
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#ffffff">
+											<textarea rows="5"
+												cols="37">
+											</textarea>
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										
+									</td>
+									<td width="70%">
+										<button type="Submit">
+											<font face="Verdana"
+												size="4" color="black">
+												<b>Submit</b>
+											</font>
+										</button>
+										<hr color="black">
+										<hr color="black">
+									</td>
+								</tr>
+							</table>
+						</td>
+
+					</tr>
+					<tr>
+						<td colspan="2">
+							
+						    
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Contact(end)-->
+
+
+	<!--Footer1(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="13%" valign="top">
+							<b>LinkedIn</b>
+							<a href="https://www.linkedin.com/in/ganesh-narale-a36038242/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Telegram</b>
+							<a href="#" style="text-decoration:none">
+								➲ 
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Watsapp</b>
+							<a href="#" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Facebook</b>
+							<a href="https://www.facebook.com/ganesh.narale.3762?mibextid=ZbWKwL" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Twitter</b>
+							<a href="#" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Instagram</b>
+							<a href="https://www.instagram.com/ganesh_45.x/" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Email</b>
+							<a href="#" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Website</b>
+							<a href="#" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+						
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer1(end)-->
+
+
+	<!--Footer2(start)-->
+	<table id="footer" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="black">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="80%" valign="top">
+							<font face="Verdana"
+								color="#4CAF50" size="5">
+								Get in touch with me naraleganesh45@gmail.com
+							</font>
+						</td>
+
+						<td width="10%">
+							<font face="arial" color="black" size="5">
+								<a href="#header" style="text-decoration:none">
+									<font face="Verdana" color="#4CAF50" size="6">
+										<b>TOP</b>
+									</font>
+								</a>
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer2(end)-->
+
+</body>
+
+</html>
